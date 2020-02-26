@@ -3,10 +3,10 @@ from functools import reduce
 import itertools
 
 def loading_test_data():
-    AUD = pd.read_csv('data/AUD.csv')
-    EUR = pd.read_csv('data/EUR.csv')
-    GBP = pd.read_csv('data/GBP.csv')
-    NZD = pd.read_csv('data/NZD.csv')
+    AUD = pd.read_csv('data/AUD.csv')[['Date','Close']]
+    EUR = pd.read_csv('data/EUR.csv')[['Date','Close']]
+    GBP = pd.read_csv('data/GBP.csv')[['Date','Close']]
+    NZD = pd.read_csv('data/NZD.csv')[['Date','Close']]
     AUD.columns = ['Date', 'AUD']
     EUR.columns = ['Date', 'EUR']
     GBP.columns = ['Date', 'GBP']
