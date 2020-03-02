@@ -6,7 +6,6 @@ import statsmodels.api as sm
 from statsmodels.tsa.stattools import coint
 from collections import OrderedDict
 from pykalman import KalmanFilter
-import backtest
 
 
 def generate_spread_ls(series_1,series_2,n):
